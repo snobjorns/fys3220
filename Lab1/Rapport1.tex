@@ -87,10 +87,29 @@ Summeringskretsen vår er vist i figur \ref{fig:oppg1_schem}. Vi har altså 3 pa
 
 \section{Oppgave 3: dc og $b_n$ for $v(t)$}
 \jf{3.a}
-\lipsum[1]
+Utregning av \(dc\)-verdier:
+
+\begin{align*}
+dc &= \frac{1}{T} \int\limits_{0}^{\frac{T}{2}} 1 dt \\
+&= \frac{1}{T} \left[t\right]_{0}^{\frac{T}{2}} \\
+&= \frac{1}{T} \left[\frac{T}{2} - 0 \right] \\
+&= \frac{1}{2}
+\end{align*}
 
 \jf{3.b}
-\lipsum[1]
+Utregning av \(b_n\)-verdier:
+\begin{align*}
+b_n &= \frac{2}{T} \int\limits_{0}^{\frac{T}{2}} sin\left(n\omega_0 t\right) dt \\
+&= - \frac{2}{T} \left[\frac{1}{n\omega_0} cos\left(n\omega_0 t\right)\right]_{0}^{\frac{T}{2}} \\
+&= - \frac{2}{T n \omega_0} \left[cos\left(n\omega_0 \frac{T}{2}\right) - cos\left(0\right)\right] \\
+&= - \frac{1}{n \pi} \left[cos\left(n\pi\right) - 1 \right] \\
+&= 
+   \left\{ 
+  \begin{array}{l l}
+    \frac{2}{n\pi} & \quad \text{, der $n$ er oddetall}\\
+    0 & \quad \text{, der $n$ er partall}\\
+  \end{array} \right.
+\end{align*}
 
 \section{Oppgave 4: Studie av Fourierspekteret til en firkantserie}
 \jf{4.a}
@@ -98,26 +117,35 @@ Summeringskretsen vår er vist i figur \ref{fig:oppg1_schem}. Vi har altså 3 pa
   \centering
   \begin{tabular}{ l r r p{2cm} p{1.3cm} p{1.4cm} p{1.4cm} }
     \toprule
-    & $n$ & $a_n$ & \centering $b_n$ Beregnet \par [V] & $b_n$ Målt \par [mV] &
+    & $n$ & $a_n$ & \centering $b_n$ Beregnet \par [mV] & $b_n$ Målt \par [mV] &
     Frekvens \par [kHz] & Vinkelf. \par [rad/s] \\
     \midrule
-     DC-verdi     &  0 & 0 & & & & \\
-     Grunntone    &  1 & 0 & & & & \\
-     2-Harmoniske &  2 & 0 & & & & \\
-     3-Harmoniske &  3 & 0 & & & & \\
-     4-Harmoniske &  4 & 0 & & & & \\
-     5-Harmoniske &  5 & 0 & & & & \\
-     6-Harmoniske &  6 & 0 & & & & \\
-     7-Harmoniske &  7 & 0 & & & & \\
-     8-Harmoniske &  8 & 0 & & & & \\
-     9-Harmoniske &  9 & 0 & & & & \\
-    10-Harmoniske & 10 & 0 & & & & \\
+     DC-verdi     &  0 & 0 & 500.0 & 500.5 & 0.0   & 0 \\
+     Grunntone    &  1 & 0 & 636.6 & 636.6 & 0.5   & 3142 \\
+     2-Harmoniske &  2 & 0 & 0     & 0     & 1.0   & 6283 \\
+     3-Harmoniske &  3 & 0 & 211.2 & 211.7 & 1.5   & 9425 \\
+     4-Harmoniske &  4 & 0 & 0 	   & 0 	   & 2.0   & 12566 \\
+     5-Harmoniske &  5 & 0 & 127.3 & 126.4 & 2.5   & 15708 \\
+     6-Harmoniske &  6 & 0 & 0 	   & 0 	   & 3.0   & 18850 \\
+     7-Harmoniske &  7 & 0 & 90.94 & 90.16 & 3.5   & 21991 \\
+     8-Harmoniske &  8 & 0 & 0     & 0     & 4.0   & 25133 \\
+     9-Harmoniske &  9 & 0 & 70.73 & 70.73 & 4.5   & 28274 \\
+    10-Harmoniske & 10 & 0 & 0     & 0     & 5.0   & 31416 \\
     \bottomrule
   \end{tabular}
   \caption{Teoretisk beregnede og målte komponenter for et oddesymmetrisk
   firkantsignal}
   \label{tab:komponenter_firkant}
 \end{table}
+
+
+
+
+
+
+
+
+
 
 \jf{4.b}
 \lipsum[1]
