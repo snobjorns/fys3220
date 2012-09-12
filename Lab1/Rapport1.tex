@@ -77,14 +77,29 @@ Summeringskretsen vår er vist i figur \ref{fig:oppg1_schem}. Vi har altså 3 pa
 \section{Oppgave 2: Simulering av egen blanding av frekvenskomponenter}
 \jf{2.a}
 
-\begin{align*}  v(t)&=0\\ &+ 1\cdot\sin{(2\pi\cdot 500Hz)}\\ &+ 0.5 \cdot \sin{(2\pi\cdot 1000Hz)}\\ &+ 0.6 \cdot \sin{(2\pi\cdot 1300Hz)}\\ &+ 0.4 \cdot \sin{(2\pi\cdot 1900Hz)}\\ & + 0.2 \cdot \sin{(2\pi\cdot 3000Hz)}\end{align*}
-
+\begin{align}  v(t)&=0\\ &+ 1\cdot\sin{(2\pi\cdot 500Hz)}\\ &+ 0.5 \cdot \sin{(2\pi\cdot 1000Hz)}\\ &+ 0.6 \cdot \sin{(2\pi\cdot 1300Hz)}\\ &+ 0.4 \cdot \sin{(2\pi\cdot 1900Hz)}\\ & + 0.2 \cdot \sin{(2\pi\cdot 3000Hz)}
+\label{eq:Likning_3}
+\end{align}
+ 
 \jf{2.b}
-\include
-
+\begin{figure}
+  \begin{center}
+     \includegraphics[width= 1\textwidth]{Figurer/oppg2_tid.png}
+     \caption{Spenning tidsplott for Signalet Sumut med parameterene i Oppgave 2.a}\label{fig:oppg2_tid}
+  \end{center}
+\end{figure}
+Se figur \ref{fig:oppg2_tid}
 \jf{2.c}
-\includegraphics[width= 1\textwidth]{Figurer/oppg2c_tid.pdf}
+ 
 
+\begin{figure}
+  \begin{center}
+      \includegraphics[width= 1\textwidth]{Figurer/oppg2_fft.png}
+       \caption{Frekvenspekteret til signalet i Figur \ref{fig:oppg2_tid}. }\label{fig:oppg2_fft}
+  \end{center}
+\end{figure}
+
+Frekvensspekteret til signalet vi genererte er vist i Figur \ref{fig:oppg2_fft}. Vi ser her hvilke frekvenser det totale signalet består av. Vi ser at hver av toppene i frekvensspekteret korresponderer til hvert sitt ledd i Likning \ref{eq:Likning_3} 
 \section{Oppgave 3: dc og $b_n$ for $v(t)$}
 \jf{3.a}
 Utregning av \(dc\)-verdier:
@@ -148,7 +163,15 @@ b_n &= \frac{2}{T} \int\limits_{0}^{\frac{T}{2}} sin\left(n\omega_0 t\right) dt 
 
 
 \jf{4.b}
-\lipsum[1]
+\begin{figure}
+  \begin{center}
+      \includegraphics[width= 1\textwidth]{Figurer/oppg4_plot.png}
+       \caption{Målt Magnitude plottet mot frekvens}\label{fig:oppg4_plot}
+  \end{center}
+\end{figure}
+
+Plottet kan sees i Figur \ref{fig:oppg4_plot}. Merk at Frekvens = 0 betyr DC verdien på signalet og at magniuden på dette systemet er lik \(b_{n}\) faktorene siden alle \(a_{n} = 0\).
+
 
 \section{Oppgave 5: Rekonstruksjon av et firkantsignal}
 \jf{5.a}
