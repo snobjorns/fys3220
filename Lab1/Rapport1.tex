@@ -39,7 +39,7 @@
 \begin{minipage}{0.49\textwidth}
     \begin{center} \large
         Snorre Bjørnstad (snorrebj)\\ \url{snorrebj@student.matnat.uio.no} \\[0.8cm]
-        %\includegraphics{bilde1}
+        \includegraphics[width = 0.5\textwidth ]{Figurer/snorre.jpg}
     \end{center}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
@@ -77,9 +77,8 @@ Summeringskretsen vår er vist i figur \ref{fig:oppg1_schem}. Vi har altså 3 pa
 \section{Oppgave 2: Simulering av egen blanding av frekvenskomponenter}
 \jf{2.a}
 
-\begin{align}  v(t)&=0\\ &+ 1\cdot\sin{(2\pi\cdot 500Hz)}\\ &+ 0.5 \cdot \sin{(2\pi\cdot 1000Hz)}\\ &+ 0.6 \cdot \sin{(2\pi\cdot 1300Hz)}\\ &+ 0.4 \cdot \sin{(2\pi\cdot 1900Hz)}\\ & + 0.2 \cdot \sin{(2\pi\cdot 3000Hz)}
-\label{eq:Likning_3}
-\end{align}
+\begin{align*}  v(t)&=0\\ &+ 1\cdot\sin{(2\pi\cdot 500Hz)}\\ &+ 0.5 \cdot \sin{(2\pi\cdot 1000Hz)}\\ &+ 0.6 \cdot \sin{(2\pi\cdot 1300Hz)}\\ &+ 0.4 \cdot \sin{(2\pi\cdot 1900Hz)}\\ & + 0.2 \cdot \sin{(2\pi\cdot 3000Hz)}
+\end{align*}
  
 \jf{2.b}
 \begin{figure}
@@ -99,7 +98,7 @@ Se figur \ref{fig:oppg2_tid}
   \end{center}
 \end{figure}
 
-Frekvensspekteret til signalet vi genererte er vist i Figur \ref{fig:oppg2_fft}. Vi ser her hvilke frekvenser det totale signalet består av. Vi ser at hver av toppene i frekvensspekteret korresponderer til hvert sitt ledd i Likning \ref{eq:Likning_3} 
+Frekvensspekteret til signalet vi genererte er vist i Figur \ref{fig:oppg2_fft}. Vi ser her hvilke frekvenser det totale signalet består av. Vi ser at hver av toppene i frekvensspekteret korresponderer til hvert sitt ledd i funksjonen i Oppgave 2.a
 \section{Oppgave 3: dc og $b_n$ for $v(t)$}
 \jf{3.a}
 Utregning av \(dc\)-verdier:
@@ -209,7 +208,7 @@ I Figur \ref{fig:oppg6_1000ms} er periodetiden satt til 1000ms. Med oppløsninge
 Vi ser at Amplituden til hver av frekvensene avtar etterhvert som signalet består av tettere komponenter 
 \jf{6.b}
 
-Vi ser at når periodetiden går mot uendelig og pulsbredden forblir den samme, kan man anse signalet som en enkelt puls. Som vi har sett i forelesning. Får man ved Fourier Integral Analyse da ett sinc funksjon for frekvensspekteret. 
+Vi ser at når periodetiden går mot uendelig og pulsbredden forblir den samme, kan man anse signalet som en enkelt puls. Som vi har sett i forelesning, får man ved Fourier Integral Analyse da en sinus kardinal funksjon for frekvensspekteret. 
 \section{Oppgave 7: Studie av spekteret til en firkantpuls som har avtakende
 pulsbredde}
 \jf{7.a}
