@@ -153,6 +153,8 @@ b_n &= \frac{2}{T} \int\limits_{0}^{\frac{T}{2}} sin\left(n\omega_0 t\right) dt 
   \label{tab:komponenter_firkant}
 \end{table}
 
+Tabell \ref{tab:komponenter_firkant} viser de målte og beregnede \(b_n\) verdiene. Vi ser at alle verdiene er tilnærmet identiske, noe som gir mening da disse målte verdiene er fra en simulering som sannsynligvis bruker numeriske beregninger for verdier.
+
 \jf{4.b}
 \begin{figure}
   \begin{center}
@@ -173,6 +175,7 @@ Plottet kan sees i Figur \ref{fig:oppg4_plot}. Merk at Frekvens = 0 betyr DC ver
   \end{center}
 \end{figure}
 
+Figur \ref{fig:oppg5a} viser tilnærmet firkant signal og ekte firkant signalet i samme plott, over to perioder. Vi ser at det tilnærmede signalet fortsatt har sinus/cosinus oscillasjoner, men følger det ekte signalet godt. Oscillasjonene kommer av at vi ikke har summert mange nok sinus-generatorer for å få et tilnærmet identisk signal.
 
 
 \section{Oppgave 6: Studie av spekteret til et firkantsignal når periodetiden
@@ -284,8 +287,10 @@ Vi ser at når pulsbredden avtar, brer hovedloben til frekvensspekteret seg ut s
   \label{tab:komponenter_sagtann}
 \end{table}
 
+Tabell \ref{tab:komponenter_sagtann} viser verdiene målt under simuleringen av sagtann signalene.
+
 \jf{8.b}
-Som tabell \ref{tab:komponenter_sagtann} viser så er verdiene målt i frekvenspekteret tilnærmet lik for de to sagtann signalene. Dersom vi sammenligner med verdiene vi målte fra firkantsignalet ser vi at sagtannpulsene ikke får verdien 0 der \(n\) er et partall. Dette kommer av forskjellen mellom sagtannsignalet og firkantsignalet.
+Som tabell \ref{tab:komponenter_sagtann} viser så er verdiene målt i frekvenspekteret tilnærmet lik for de to sagtann signalene. Dette betyr altså at de to signalene inneholder de samme frekvenskomponentene. Dersom vi sammenligner med verdiene vi målte fra firkantsignalet ser vi at sagtannpulsene ikke får verdien 0 der \(n\) er et partall. Dette kommer da av den tydelige forskejllen på hvordan de to signalene er bygd opp. Da sagtann signalet bruker tid på å bygge seg oppp til maksimal amplitude og deretter går rett ned til null.
 
 \section{Oppgave 9. Studie av tilnærmingsfunksjon for en ekte sagtann}
 \jf{9.a}
@@ -302,7 +307,7 @@ Figur \ref{fig:oppg9a_sagtann} viser vårt tilnærmet sagtann signal plottet sam
 \jf{10.a}
 Frekvenskomponenter som måtte fasevendes 180 grader:
 
-Vi fant ut at dersom vi fasevendet alle sinusgeneratorene så tilnærmet sagtann best ut i forhold til ekte sagtann2. Dette gir mening siden vi kunne se at ekte sagtann1 og ekte sagtann2 var 180 grader faseforskjøvet i forhold til hverandre.
+Vi fant ut at dersom vi fasevendet alle sinusgeneratorene så tilnærmet sagtann best ut i forhold til ekte sagtann2. Dette gir mening siden vi kan se at ekte sagtann1 og ekte sagtann2 signalene går speilvendt av hverandre, altså 180 grader faseforskjøvet i forhold til hverandre.
 
 \jf{10.b}
 \begin{figure}
